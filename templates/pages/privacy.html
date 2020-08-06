@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}{% block title %} | Privacy {% endblock %} {% block content %}
+{% load static %}
+<br>
+<br>
+<br>
+<!-- Termly Tracking Code -->
+<div class="row">
+  <div class="container">
+<div name="termly-embed" data-id="53aba190-9590-47d5-b0c2-2914ce0bdc15" data-type="iframe"></div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, tjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://app.termly.io/embed-policy.min.js";
+  tjs.parentNode.insertBefore(js, tjs);
+}(document, 'script', 'termly-jssdk'));</script>
+</div>
+</div>
+{% endblock %}

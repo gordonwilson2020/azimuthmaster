@@ -1,0 +1,148 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+{% block head_links %} 
+
+<title>Signup</title>
+
+{% endblock %}
+
+{% block content %}
+<br>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+
+
+      <div class="">
+        <div class="row flex-center min-vh-100 py-6">
+          <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4"><a class="d-flex flex-center mb-4" href="{% url 'index' %}"><span class="text-sans-serif font-weight-extra-bold fs-5 d-inline-block">cosmos</span></a>
+            <div class="card">
+              <div class="card-body p-4 p-sm-5">
+                <div class="row text-left justify-content-between align-items-center mb-2">
+                  <div class="col-auto">
+                    <h5> Register</h5>
+                  </div>
+                  <div class="col-auto">
+                    <p class="fs--1 text-600 mb-0">Have an account? <a href="{% url 'account_login' %}">Login</a></p>
+                  </div>
+                </div>
+
+                  <div class="row">
+<div class="container-fluid text-center col-md-8">
+
+ {% block messages %}
+    {% if messages %}
+    <div>
+        <ul>
+        {% for message in messages %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>{{message}}</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+  {% endblock %}
+
+
+<h3 class="h3" id="head_banner">{% trans "Sign Up" %}</h3>
+
+<p class="exist_account_info">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+
+
+
+  <!-- Checkbox -->
+  <div class="js-form-message mb-5">
+
+    <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
+      <input type="checkbox" class="custom-control-input" id="termsCheckbox" name="termsCheckbox" required
+             data-msg="Please accept our Terms and Conditions."
+             data-error-class="u-has-error"
+             data-success-class="u-has-success">
+      <label class="custom-control-label" for="termsCheckbox">
+        <small>
+          I agree to the
+          <a class="link-muted" href="../pages/terms.html">Terms and Conditions</a>
+        </small>
+
+      </label>
+
+    </div>
+
+  </div>
+  <!-- End Checkbox -->
+
+
+  </div>
+  <!-- End Button -->
+</div>
+
+
+
+
+<form class="container-fluid text-center" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  {% csrf_token %}
+                        <div class="form-group">
+                          <label for="card-name">First name</label>
+                          <input class="form-control" type="text" id="card-name"{{ form.first_name }}
+                        </div>
+                      <div class="form-group">
+                          <label for="card-name">Last name</label>
+                          <input class="form-control" type="text" id="card-name"{{ form.last_name }}
+                        </div>
+                      <div class="form-group">
+                          <label for="card-name">Email</label>
+                          <input class="form-control" type="text" id="card-name"{{ form.email }}
+                        </div>
+                  <div class="form-group">
+                          <label for="card-name">Username</label>
+                          <input class="form-control" type="text" id="card-name"{{ form.username }}
+                        </div>
+<br>
+                      <div class="form-group">
+                          <label for="card-name">Phone number</label>
+                          <input class="form-control" type="text" id="card-name"{{ form.phone}}
+                        </div>
+<br>
+  {% if redirect_field_value %}
+
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+
+  {% endif %}
+
+  <button class="btn btn-outline-primary btn-lg" type="submit">{% trans "Sign Up" %}</button>
+</form>
+                <div class="w-100 position-relative mt-4">
+                  <hr class="text-300" />
+                  <div class="position-absolute absolute-centered t-0 px-3 bg-white text-sans-serif fs--1 text-500 text-nowrap">or register with</div>
+                </div>
+                <div class="form-group mb-0">
+                  <div class="row no-gutters">
+                    <div class="col-sm-6 pr-sm-1"><a class="btn btn-outline-google-plus btn-sm btn-block mt-2" href="#"><span class="fab fa-google-plus-g mr-2" data-fa-transform="grow-8"></span> google</a></div>
+                    <div class="col-sm-6 pl-sm-1"><a class="btn btn-outline-facebook btn-sm btn-block mt-2" href="#"><span class="fab fa-facebook-square mr-2" data-fa-transform="grow-8"></span> facebook</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+
+
+</div>
+{% endblock %}

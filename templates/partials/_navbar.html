@@ -1,0 +1,187 @@
+{% load static %}
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--sticky-top u-header--show-hide"
+          data-header-fix-moment="500"
+          data-header-fix-effect="slide">
+    <div class="u-header__section">
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="{% url 'index' %}">
+            <h5>AZIMUTH CANNABIS</h5>
+          </a>
+          <!-- End Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn u-hamburger"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                  aria-controls="navBar"
+                  data-toggle="collapse"
+                  data-target="#navBar">
+            <span id="hamburgerTrigger" class="u-hamburger__box">
+              <span class="u-hamburger__inner"></span>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+
+{% block content %}
+{% if user.is_authenticated %}
+
+<ul>
+<li>
+  <ul class="navbar-nav align-items-center ml-auto">
+    <ul>
+            <li class="nav-item u-header__nav-last-item">
+      <a class="btn btn-sm btn-primary transition-3d-hover" href="">
+        Search
+      </a>
+    </li>
+    </ul>
+      <ul>
+    <li class="nav-item u-header__nav-last-item">
+      <a class="btn btn-sm btn-primary transition-3d-hover" href="{% url 'dashboard' %}">
+        Dashboard
+      </a>
+    </li>
+    </ul>
+    <ul>
+    <li class="nav-item u-header__nav-last-item">
+      <a class="btn btn-sm btn-primary transition-3d-hover" href="{% url 'chat' %}">
+        Chat
+      </a>
+    </li>
+    </ul>
+    <ul>
+    <li class="nav-item u-header__nav-last-item">
+      <a class="btn btn-sm btn-primary transition-3d-hover" href="{% url 'profile' %}">
+        Profile
+      </a>
+    </li>
+    </ul>
+    <!-- End Button -->
+    <ul>
+
+    <li class="nav-item u-header__nav-last-item">
+      <a class="btn btn-sm btn-primary transition-3d-hover" href="{% url 'account_logout' %}">
+        Logout
+      </a>
+
+    </li>
+    </ul>
+  </ul>
+  </li>
+  </ul>
+{% else %}
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <div class="js-scrollbar u-header__navbar-body u-header--abs-top__inner">
+              <ul class="navbar-nav u-header__navbar-nav">
+                <!-- Home -->
+                <li class="nav-item hs-has-mega-menu u-header__nav-item"
+                    data-event="hover"
+                    data-animation-in="slideInUp"
+                    data-animation-out="fadeOut"
+                    data-position="left">
+                  <a id="homeMegaMenu" class="nav-link" href="javascript:;" aria-haspopup="true" aria-expanded="false">What we do</a>
+
+                  <!-- Home - Mega Menu -->
+                  <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="homeMegaMenu">
+                    <div class="row no-gutters">
+                      <div class="col-lg-6">
+                        <!-- Banner Image -->
+                        <div class="u-header__banner" style="background-image: url(https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/img/750x750/img1.jpg);">
+                          <div class="u-header__banner-content">
+                            <div class="mb-4">
+                              <span class="u-header__banner-title">Azimuth Cannabis</span>
+                              <p class="u-header__banner-text">Professional Services for the Cannabis Industry</p>
+                            </div>
+                            <a class="btn btn-primary btn-sm transition-3d-hover" href="{% url 'account_signup' %}">Learn More</a>
+                          </div>
+                        </div>
+                        <!-- End Banner Image -->
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="row u-header__mega-menu-wrapper">
+                          <div class="col-sm-6 mb-3 mb-sm-0">
+                            <a href="{% url 'business' %}">
+                            <span class="u-header__sub-menu-title">Business</span>
+                            </a>
+                            <br/>
+                            <a href="{% url 'marketing' %}">
+                            <span class="u-header__sub-menu-title">Marketing</span>
+                            </a>
+                            <br/>
+                            <a href="{% url 'permitting' %}">
+                            <span class="u-header__sub-menu-title">Permitting</span>
+                            </a>
+                            <br/>
+                          </div>
+
+                          <div class="col-sm-6">
+                            TEST
+                            <div class="col-md-4 mb-7">
+        <a class="btn transition-3d-hover" href="#subscribeModal" data-modal-target="#subscribeModal">
+        <div class="text-center px-lg-3">
+          <span class="btn btn-icon btn-lg btn-soft-success rounded-circle mb-5">
+            <span class="fas fa-satellite fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+          </span>
+        </div>
+        </a>
+      </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Home - Mega Menu -->
+                </li>
+                <!-- End Home -->
+
+                <!-- Pages -->
+                <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                    data-event="hover"
+                    data-animation-in="slideInUp"
+                    data-animation-out="fadeOut">
+                  <a id="pagesMegaMenu" class="nav-link u-header__nav-link" href="{% url 'team' %}">Team</a>
+
+                </li>
+                <!-- End Pages -->
+
+<div>
+  <ul>
+      <a class="btn btn-primary" href="{% url 'account_login' %}">Sign In</a>
+      <a class="btn btn-primary" href="{% url 'account_signup' %}">Sign Up</a>
+    {% endif %}
+  </ul>
+</div>
+
+<!-- End Button -->
+
+{% endblock %}
+{% if messages %}
+<div>
+  <strong>Messages:</strong>
+  <ul>
+    {% for message in messages %}
+    <li>{{message}}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+
+              </ul>
+            </div>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->

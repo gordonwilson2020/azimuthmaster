@@ -1,0 +1,21 @@
+{% extends 'base.html' %}{% block title %} | Terms & Conditions {% endblock %} {% block content %}
+{% load static %}
+<br>
+<br>
+<br>
+<div class="row"
+<div class="container">
+  <!-- Termly Tracking Code -->
+
+  <div name="termly-embed" data-id="0bf8f24d-737e-4627-90f1-381cae82a8fd" data-type="iframe"></div>
+  <script type="text/javascript">(function(d, s, id) {
+    var js, tjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://app.termly.io/embed-policy.min.js";
+    tjs.parentNode.insertBefore(js, tjs);
+  }(document, 'script', 'termly-jssdk'));</script>
+</div>
+</div>
+
+{% endblock %}

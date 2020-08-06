@@ -1,0 +1,256 @@
+{% load static %}
+{% load crispy_forms_tags %}
+{% load leaflet_tags %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/cosmoslogo.png">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<!-- Custom Favicon & App Icons for Apple/Android devices -->
+		<link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/apple-icon-57x57.png' %}">
+		<link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/apple-icon-60x60.png' %}">
+		<link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-icon-72x72.png' %}">
+		<link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-icon-76x76.png' %}">
+		<link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-icon-114x114.png' %}">
+		<link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/apple-icon-120x120.png' %}">
+		<link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/apple-icon-144x144.png' %}">
+		<link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/apple-icon-152x152.png' %}">
+		<link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-icon-180x180.png' %}">
+		<link rel="icon" type="image/png" sizes="192x192"  href="{% static 'img/android-icon-192x192.png' %}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+		<link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/favicon-96x96.png' %}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+		<link rel="manifest" href="{% static 'img/manifest.json' %}">
+		<meta name="msapplication-TileColor" content="#564aa3">
+		<meta name="msapplication-TileImage" content="{% static 'img/ms-icon-144x144.png' %}">
+		<meta name="theme-color" content="#564aa3">
+
+		<!-- Latest compiled and minified FontAwesome CSS -->
+
+		<!-- Latest Simple Line Icons CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.1/css/simple-line-icons.css">
+
+		<!-- Latest Spinkit.css Library -->
+		<link rel="stylesheet" href="{% static 'vendor/spinkit.css/spinkit.css' %}">
+
+		<!-- Latest DataTables Bootstrap CSS -->
+
+		<!-- Latest compiled and minified Bootstrap CSS -->
+
+		<!-- Custom CSS overrides and Custom CSS styles -->
+		<link rel="stylesheet" href="{% static 'css/basenews.css' %}">
+		<link rel="stylesheet" href="{% static 'css/stylenews.css' %}">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/hs-bg-video/hs-bg-video.css">
+    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/custombox/dist/custombox.min.css">
+    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/animate.css/animate.min.css">
+{#    <link rel="stylesheet" href=https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/lib/leaflet/leaflet.css">#}
+{#    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/lib/leaflet.markercluster/MarkerCluster.css">#}
+{#    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/lib/leaflet.markercluster/MarkerCluster.Default.css">#}
+
+
+    <link href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/css/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
+
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/css/theme.css">
+
+   {% leaflet_js %}
+    {% leaflet_css %}
+    <title>{% block head_title %}Azimuth Cannabis{% endblock %}</title>
+    {% block extra_head %}
+    {% endblock %}
+  </head>
+  <body>
+
+    {% include 'partials/_navbar.html' %}
+    {% block body %}
+
+
+    </div>
+    {% block content %}
+    {% endblock %}
+    {% endblock %}
+    {% block extra_body %}
+    {% endblock %}
+    {% include 'partials/_footer.html' %}
+  </body>
+  <!-- JS Global Compulsory -->
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<!-- Latest compiled and minified jQuery & Bootstrap JavaScript -->
+
+		<!-- Latest DataTables JavaScript files -->
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
+
+		<!-- Custom App JavaScript -->
+  <script src="{% static 'js/app.js' %}"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/components/hs.video-player.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+	<!-- Custom Articles List JavaScript -->
+  <script src="{% static 'js/pagination.js' %}"></script>
+  <script src="{% static 'js/articles.js' %}"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/hs-bg-video/hs-bg-video.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/hs-bg-video/vendor/player.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/typed.js/lib/typed.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/vendor/gmaps/gmaps.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/js/popper.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/js/bootstrap.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/lib/stickyfilljs/stickyfill.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/lib/sticky-kit/sticky-kit.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/lib/is_js/is.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/lib/@fortawesome/all.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/lib/fancybox/jquery.fancybox.min.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/dashboard/assets/js/theme.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/lib/tinymce/tinymce.min.js"></script>
+{#  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/lib/leaflet/leaflet.js"></script>#}
+{#    <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/lib/leaflet.markercluster/leaflet.markercluster.js"></script>#}
+{#    <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/lib/leaflet.tilelayer.colorfilter/leaflet-tilelayer-colorfilter.min.js"></script>#}
+  <script src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/js/components/hs.focus-state.js"></script>
+  <script src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/js/components/hs.show-animation.js"></script>
+
+
+  <!-- JS Front -->
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/hs.core.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/components/hs.header.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/components/hs.slick-carousel.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/components/hs.bg-video.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/components/hs.validation.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/components/hs.svg-injector.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/components/hs.go-to.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/components/hs.step-form.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/components/hs.modal-window.js"></script>
+  <script src="https://corgiproduction.s3.amazonaws.com/AWSLogs/079129819709/CloudTrail/cosmos/cosmosmaster/assets/js/helpers/hs.g-map.js"></script>
+  <script src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/js/components/hs.cubeportfolio.js"></script>
+
+
+  <!-- JS Plugins Init. -->
+
+  <script>
+      jQuery(document).ready(function () {
+        jQuery('#vmap').vectorMap({
+          map: 'usa_en',
+          enableZoom: true,
+          showTooltip: true,
+          selectedColor: null,
+          hoverColor: '#990099',
+          colors: {
+            ak: '#660066',
+            ca: '#660066',
+            co: '#660066',
+            il: '#660066',
+            me: '#660066',
+            ma: '#660066',
+            mi: '#660066',
+            nv: '#660066',
+            or: '#660066',
+            wa: '#660066',
+            vt: '#660066',
+          },
+          onRegionClick: function(event, code, region){
+            event.preventDefault();
+          },
+
+        });
+      });
+    </script>
+<script>
+    // initialization of google map
+    function initMap() {
+      $.HSCore.components.HSGMap.init('.js-g-map');
+    }
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
+      autonomous: true
+    });
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+      $.HSCore.components.HSStepForm.init('.js-step-form');
+      // initialization of cubeportfolio
+      $.HSCore.components.HSCubeportfolio.init('.cbp');
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of video on background
+      $.HSCore.components.HSBgVideo.init('.js-bg-video');
+
+      // initialization of video player
+      $.HSCore.components.HSVideoPlayer.init('.js-inline-video-player');
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of text animation (typing)
+      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+        strings: ["start", "run", "grow"],
+        typeSpeed: 70,
+        loop: true,
+        backSpeed: 40,
+        backDelay: 2000
+      });
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+        confirmPassword: {
+          equalTo: '#signupPassword'
+        }
+      }
+      });
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+
+</html>

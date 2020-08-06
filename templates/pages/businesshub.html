@@ -1,0 +1,1026 @@
+{% extends 'base.html' %}{% block title %} | Dashboard{% endblock %}
+{% load static %}
+{% block content %}
+
+
+<!-- ========== MAIN ========== -->
+<main id="content" role="main">
+
+{% include 'partials/_dashboard_profile.html' %}
+  <!-- Content Section -->
+  <div class="bg-light">
+
+<!-- Subscribe Section -->
+  <div id="SVGSubscribeForm" class="svg-preloader position-relative text-center">
+    <div class="container space-2 space-bottom-lg-4">
+      <!-- Title -->
+      <div class="w-md-60 mx-auto mb-7">
+        <h2 class="h1 font-weight-medium">Business Hub</h2>
+      </div>
+      <!-- End Title -->
+
+
+
+      <!-- SVG Illustration -->
+      <div class="d-none d-lg-block position-absolute bottom-0 left-0 max-width-35 w-100">
+        <figure class="ie-mobile-article">
+          <img class="js-svg-injector" src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/svg/illustrations/mobile-article.svg" alt="Image Description" data-parent="#SVGSubscribeForm">
+        </figure>
+      </div>
+      <!-- End SVG Illustration -->
+    </div>
+  </div>
+  <!-- End Subscribe Section -->
+  <div class="container">
+    <div class="u-cubeportfolio">
+      <!-- Filter -->
+      <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
+        <li class="list-inline-item cbp-filter-item cbp-filter-item-active u-cubeportfolio__item" data-filter="*">All</li>
+        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".branding">Plans</li>
+        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".abstract">Guides</li>
+        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".graphic">Tax</li>
+        <li class="list-inline-item cbp-filter-item u-cubeportfolio__item" data-filter=".illustration">Finance</li>
+      </ul>
+      <!-- End Filter -->
+
+      <!-- Content -->
+      <div class="cbp" data-layout="grid" data-controls="#filterControls" data-animation="quicksand" data-x-gap="32" data-y-gap="32" data-media-queries='[
+                {"width": 1500, "cols": 4},
+                {"width": 1100, "cols": 4},
+                {"width": 800, "cols": 3},
+                {"width": 480, "cols": 2},
+                {"width": 300, "cols": 1}
+              ]'>
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="{%  url 'businessplan' %}">
+            <div class="cbp-caption-defaultWrap">
+
+         <div class="text-center px-lg-3">
+            <span class="btn btn-icon btn-lg btn-soft-info rounded-circle mb-5">
+              <span class="fas fa-tasks fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+            </span>
+             <p>Business Plan Builder</p>
+          </div>            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+
+                  <h4 class="h6 text-white mb-0">Business Plan Builder</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="{%  url 'sopbuilder' %}">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-01/MJ-01_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">S.O.P Builder</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded abstract illustration">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-02/MJ-02_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Premises Diagram</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-02.pdf">Fill out or download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-07/MJ-07_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Public Notice Affidavit</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-07.pdf">Fill out or download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-04/MJ-04_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Ops Plan Supplemental</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-04.pdf">Fill out or download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-07a/MJ-07a_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Onsite Consumption Endorsement</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-07a.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-07b/MJ-07b_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Mailed Notice Affidavit</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-07b.pdf">Fill out or download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-07c/MJ-07c_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Public Notice Posting</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-07c.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-08/MJ-08_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Local Government Notice</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-08.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-08a/MJ-08a_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Onsite Consumption Endorsement</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-08a.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-08b/MJ-08b_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">License Conversion</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-08b.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-09/MJ-09_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Public Notice Posting</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-09.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-10/MJ-10_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Education Provider</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-010.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-12/MJ-12_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Petition</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-12.pdf">Fill out or download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-13/MJ-13_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Business Name Change</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-13.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-14/MJ-14_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Licensed Premises Diagram Change</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-14.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-15/MJ-15_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Operating Plan Change</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-15.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-16/MJ-16_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Proposed New Product</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-16.pdf">Fill out or download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-17/MJ-17_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Ownership Change</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-17.pdf">Fill out or download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-17b/MJ-17b_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Transfer Checklist</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-17b.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-17c/MJ-17c_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Transfer Application</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-17c.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-17d/MJ-17d_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Ops Plan/Premises Diagram affidavit</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-17d.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-19/MJ-19_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Creditors Affidavit</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-19.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-20/MJ-20_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Renewal Application Cert</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-20.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-22a/MJ-22a_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Request to Retest</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-22a.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-22b/MJ-22b_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Transfer Failed Test Material</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-22b.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-24/MJ-24_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Media Notice Template</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-24.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-24b/MJ-24b_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Media Notice Template</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-24b.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-25/MJ-25_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Waste Disposal Notice</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-25.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-26/MJ-26_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Quality Control Report</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-26.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-27/MJ-27_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Unlicensed Source Form</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-27.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-28a/MJ-28a_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Consumption Endorsement Checklist</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-28a.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-28b/MJ-28b_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Supplemental Consumption Endorsement Checklist</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-28b.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-29a/MJ-29a_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Conversion Application Checklist</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-29a.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-29b/MJ-29b_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">License Conversion Application</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-29b.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+
+        <!-- Item -->
+        <div class="cbp-item rounded branding">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJ-29c/MJ-29c_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Operating Plan Change</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJ-29c.pdf">Fill out or download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+
+        <!-- Item -->
+        <div class="cbp-item rounded abstract">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MJLicRenewalAppNotice/MJLicRenewalAppNotice_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Renewak Notice</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MJLicRenewalAppNotice.pdf">Fill out or Download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded graphic">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/3AAC306+8-21-19/3AAC306+8-21-19_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Regulations</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/3AAC306 8-21-19.pdf">Fill out or Download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="cbp-item rounded graphic">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/AS17.38/AS17.38_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Regulations</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/AS17.38.pdf">Fill out or Download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="cbp-item rounded illustration">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/Cash+Payment+Instructions/Cash+Payment+Instructions_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Cash Payment Instructions</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/Cash Payment Instructions.pdf">Fill out or Download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="cbp-item rounded illustration">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/Marijuana+Handler+Permit+Renewal+Instructions/Marijuana+Handler+Permit+Renewal+Instructions_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Cash Payment Instructions</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/Marijuana Handler Permit Renewal Instructions.pdf">Fill out or Download</a>
+
+          </div>
+        </div>
+        <!-- End Item -->
+        <!-- Item -->
+        <div class="cbp-item rounded illustration">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/Marijuana+Handler+Permit+Renewal+Instructions/Marijuana+Handler+Permit+Renewal+Instructions_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Permitting Instructions</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MarijuanaHandlerPermitApplicationInstructions.pdf">Fill out or Download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+        <!-- Item -->
+        <div class="cbp-item rounded graphic">
+          <a class="cbp-caption" href="#">
+            <div class="cbp-caption-defaultWrap">
+              <img src="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/images/MarijuanaHandlerPermitReplacementForm/MarijuanaHandlerPermitReplacementForm_000001.jpg" alt="Image Description">
+            </div>
+            <div class="cbp-caption-activeWrap bg-primary">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <h4 class="h6 text-white mb-0">Permit Replacement Form</h4>
+
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="container text-center">
+            <a class="btn btn-primary" href="https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/permitting/AlaskaPermitting/MarijuanaHandlerPermitReplacementForm.pdf">Fill out or Download</a>
+          </div>
+        </div>
+        <!-- End Item -->
+
+
+
+
+
+
+
+      </div>
+      <!-- End Content -->
+    </div>
+
+
+  </div>
+
+  <br>
+  <!-- Testimonials Section -->
+  <div class="bg-img-hero-bottom" style="background-image: url(https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/img/1920x800/img11.jpg);">
+    <div class="container">
+      <div class="row justify-content-md-end">
+        <div class="col-md-6 col-lg-5 col-xl-4 space-top-3 mb-n9">
+          <!-- Testimonials -->
+          <div class="card border-0 bg-primary shadow-primary-lg mt-lg-n11 p-5 p-lg-7">
+            <div class="text-white mb-7">
+              <span class="d-block text-warning font-size-1 font-weight-semi-bold text-uppercase mb-3">Cosmos clients</span>
+              <h2 class="h2 text-white">We have everything you need to start, run and grow your cannabis business</h2>
+            </div>
+            <a class="btn btn-block btn-white transition-3d-hover" href="#">Learn More</a>
+          </div>
+          <!-- End Testimonials -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonials Section -->
+  <!-- End Content Section -->
+</main>
+<!-- ========== END MAIN ========== -->
+{% endblock %}

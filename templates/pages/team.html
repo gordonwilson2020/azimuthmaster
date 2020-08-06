@@ -1,0 +1,112 @@
+{% extends 'base.html' %}{% block title %} | Home{% endblock %} {% block content %}
+{% load static %}
+<!-- ========== MAIN ========== -->
+<main id="content" role="main">
+  <!-- Hero Section -->
+  <div class="container space-2 space-top-md-5 space-top-lg-4">
+    <div class="w-lg-80 text-center mx-lg-auto">
+      <div class="mb-11">
+        <h1 class="display-4 font-weight-semi-bold">We are a cannabis company based in Toronto</h1>
+        <p class="lead font-weight-normal">Professional services for the cannabis industry</p>
+      </div>
+    </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-3">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Team</a></li>
+      </ol>
+    </nav>
+    <!-- Gallery Section -->
+    <div class="row mx-n2">
+      <div class="col-md px-2 mb-3">
+        <div class="height-250 bg-img-hero" style="background-image: url(https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/img/480x320/img31.jpg);"></div>
+      </div>
+      <div class="col-md-3 px-2 mb-3">
+        <div class="height-250 bg-img-hero" style="background-image: url(https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/img/480x320/img38.jpg);"></div>
+      </div>
+      <div class="col-md px-2 mb-3">
+        <div class="height-250 bg-img-hero" style="background-image: url(https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/img/480x320/img34.jpg);"></div>
+      </div>
+
+      <div class="w-100"></div>
+
+      <div class="col-md px-2 mb-3 mb-md-0">
+        <div class="height-250 bg-img-hero" style="background-image: url(https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/img/480x320/img25.jpg);"></div>
+      </div>
+      <div class="col-md-4 px-2 mb-3 mb-md-0">
+        <div class="height-250 bg-img-hero" style="background-image: url(https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/img/480x320/img32.jpg);"></div>
+      </div>
+      <div class="col-md px-2">
+        <div class="height-250 bg-img-hero" style="background-image: url(https://cosmoscannabis.s3-us-west-1.amazonaws.com/assets/img/480x320/img36.jpg);"></div>
+      </div>
+    </div>
+    <!-- End Gallery Section -->
+  </div>
+  <!-- End Hero Section -->
+
+  <!-- Stats Section -->
+  <div class="container space-top-1 space-bottom-2 space-bottom-lg-3">
+    <div class="row justify-content-lg-center">
+      <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
+        <!-- Stats -->
+        <div class="text-center">
+          <span class="d-block h2 font-weight-semi-bold text-uppercase mb-0">2</span>
+          <span class="text-secondary">years in business</span>
+        </div>
+        <!-- End Stats -->
+      </div>
+
+      <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
+        <!-- Stats -->
+        <div class="text-center">
+          <span class="d-block h2 font-weight-semi-bold text-uppercase mb-0">100+</span>
+          <span class="text-secondary">products launched</span>
+        </div>
+        <!-- End Stats -->
+      </div>
+
+      <div class="col-sm-4 col-lg-3">
+        <!-- Stats -->
+        <div class="text-center">
+          <span class="d-block h2 font-weight-semi-bold text-uppercase mb-0">100%</span>
+          <span class="text-secondary">invested in the cannabis industry</span>
+        </div>
+        <!-- End Stats -->
+      </div>
+    </div>
+  </div>
+  <!-- End Stats Section -->
+
+  <!-- Divider -->
+  <div class="container">
+    <div class="w-lg-65 mx-lg-auto">
+      <hr class="my-0">
+    </div>
+  </div>
+  <!-- End Divider -->
+
+  <!-- About Section -->
+  <div class="container space-2 space-lg-3">
+    <div class="row justify-content-lg-between">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <h2 class="font-weight-semi-bold">Tools should adapt to the user, not the other way around.</h2>
+      </div>
+      <div class="col-lg-6">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur eveniet exercitationem labore non quia, repellendus. Assumenda atque blanditiis cupiditate delectus doloremque iste laborum, minus non quaerat sapiente, sequi voluptates.
+      </div>
+    </div>
+  </div>
+  <!-- End About Section -->
+
+  <!-- Divider -->
+  <div class="container">
+    <div class="w-lg-65 mx-lg-auto">
+      <hr class="my-0">
+    </div>
+  </div>
+  <!-- End Divider -->
+
+
+</main>
+<!-- ========== END MAIN ========== -->
+{% endblock %}

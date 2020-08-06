@@ -1,0 +1,1664 @@
+{% extends 'base.html' %}{% block title %} | Business Plan Builder{% endblock %}
+{% load static %}
+{% block content %}
+<main id="content" role="main">
+{% include 'partials/_dashboard_profile.html' %}
+<br>
+    <br>
+    <div class="row">
+        <div class="container">
+            <!-- Core Values -->
+<div class="position-relative">
+  <div class="container space-2">
+    <div class="row align-items-center">
+      <div class="col-lg-5 mb-9 mb-lg-0">
+        <!-- Title -->
+        <div class="pr-lg-4 mb-7">
+          <span class="btn btn-xs btn-soft-success btn-pill mb-2">Business</span>
+          <h2 class="text-primary">Welcome to the
+            <span class="font-weight-semi-bold">business plan builder</span>
+          </h2>
+          <p>At Azimuth, we don't just accept difference—we celebrate it, we support it, and we thrive on it for the benefit of our customers, our partners, and our community.</p>
+        </div>
+        <!-- End Title -->
+
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- List -->
+            <ul class="list-unstyled mb-0">
+              <li class="py-2">
+                <div class="media">
+                  <span class="btn btn-sm btn-icon btn-soft-danger rounded-circle mr-3">
+                    <span class="fas fa-heart btn-icon__inner"></span>
+                  </span>
+                  <div class="media-body">
+                    Empathy
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="media">
+                  <span class="btn btn-sm btn-icon btn-soft-primary rounded-circle mr-3">
+                    <span class="fas fa-smile btn-icon__inner"></span>
+                  </span>
+                  <div class="media-body">
+                    Courtesy
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="media">
+                  <span class="btn btn-sm btn-icon btn-soft-success rounded-circle mr-3">
+                    <span class="fab fa-studiovinari btn-icon__inner"></span>
+                  </span>
+                  <div class="media-body">
+                    Kindness
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- End List -->
+          </div>
+
+          <div class="col-sm-6">
+            <!-- List -->
+            <ul class="list-unstyled mb-0">
+              <li class="py-2">
+                <div class="media">
+                  <span class="btn btn-sm btn-icon btn-soft-danger rounded-circle mr-3">
+                    <span class="fab fa-steam-symbol btn-icon__inner"></span>
+                  </span>
+                  <div class="media-body">
+                    Craftsmanship
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="media">
+                  <span class="btn btn-sm btn-icon btn-soft-primary rounded-circle mr-3">
+                    <span class="fas fa-table-tennis btn-icon__inner"></span>
+                  </span>
+                  <div class="media-body">
+                    Playfulness
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="media">
+                  <span class="btn btn-sm btn-icon btn-soft-success rounded-circle mr-3">
+                    <span class="fab fa-slideshare btn-icon__inner"></span>
+                  </span>
+                  <div class="media-body">
+                    Solidarity
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- End List -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 position-relative">
+        <!-- Video Block -->
+        <div id="youTubeVideoPlayer" class="u-video-player mb-5">
+          <!-- Cover Image -->
+          <img class="img-fluid u-video-player__preview" src="../../assets/img/900x450/img5.jpg" alt="Image">
+          <!-- End Cover Image -->
+
+          <!-- Play Button -->
+          <a class="js-inline-video-player u-video-player__btn u-video-player__centered" href="javascript:;"
+             data-video-id="0qisGSwZym4"
+             data-parent="youTubeVideoPlayer"
+             data-is-autoplay="true"
+             data-target="youTubeVideoIframe"
+             data-classes="u-video-player__played">
+            <span class="u-video-player__icon u-video-player__icon--lg text-primary">
+              <span class="fas fa-play u-video-player__icon-inner"></span>
+            </span>
+          </a>
+          <!-- End Play Button -->
+
+          <!-- Video Iframe -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <div id="youTubeVideoIframe"></div>
+          </div>
+          <!-- End Video Iframe -->
+        </div>
+        <!-- End Video Block -->
+
+        <!-- SVG Background Shape -->
+        <div id="SVGbgShape" class="svg-preloader w-100 content-centered-y z-index-n1">
+          <figure class="ie-soft-triangle-shape">
+            <img class="js-svg-injector" src="../../assets/svg/components/soft-triangle-shape.svg" alt="Image Description"
+                 data-parent="#SVGbgShape">
+          </figure>
+        </div>
+        <!-- End SVG Background Shape -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Core Values -->
+        </div>
+    </div>
+
+
+
+
+{#    Start of business plan builder #}
+<div class="row">
+    <div class="container text-center">
+        <!-- Step Form -->
+<form class="js-validate js-step-form"
+      data-progress-id="#progressStepForm"
+      data-steps-id="#contentStepForm"
+      novalidate="novalidate">
+  <div class="card">
+    <div class="card-header p-5">
+      <nav id="progressStepForm" class="js-step-progress nav nav-icon nav-justified text-center">
+        <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-user-circle nav-icon-action-inner"></span>
+          </span>
+          Intro
+        </a>
+        <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-file-invoice-dollar nav-icon-action-inner"></span>
+          </span>
+          1. Executive Summary
+        </a>
+        <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          2. Team
+        </a>
+                  <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          3. Company Summary
+        </a>
+                  <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          4. Market Analysis
+        </a>
+                  <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          5. Products
+        </a>
+                  <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          6. Industry Analysis
+        </a>
+                  <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          7. Strategy Implementation
+        </a>
+                  <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          8. Online Strategy
+        </a>
+                  <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          9. Operation Plan
+        </a>
+                  <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          10. Security Plan
+        </a>
+                  <a href="javascript:;" class="nav-item">
+          <span class="nav-icon-action">
+            <span class="fas fa-paperclip nav-icon-action-inner"></span>
+          </span>
+          11. Financial Information
+        </a>
+      </nav>
+    </div>
+
+    <!-- Content Step Form -->
+    <div id="contentStepForm" class="card-body p-5">
+      <div id="selectStepOne" class="active">
+        {# #}
+          <!-- Basics Accordion -->
+<div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Terms &amp; Conditions
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Email
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          Company Name
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          Telephone Number
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+<!-- End Basics Accordion -->
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-sm btn-primary transition-3d-hover mr-1" data-next-step="#selectStepTwo">Next</button>
+        </div>
+      </div>
+
+      <div id="selectStepTwo" style="display: none;">
+<!-- Basics Accordion -->
+<div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+<!-- End Basics Accordion -->
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepOne">Back</a>
+          <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepThree">Next</button>
+        </div>
+      </div>
+
+      <div id="selectStepThree" style="display: none;">
+        <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepTwo">Back</a>
+                      <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepFour">Next</button>
+
+        </div>
+      </div>
+
+              <div id="selectStepFour" style="display: none;">
+       <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepThree">Back</a>
+                      <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepFive">Next</button>
+
+        </div>
+      </div>
+
+                      <div id="selectStepFive" style="display: none;">
+        <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepFour">Back</a>
+                      <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepSix">Next</button>
+
+        </div>
+      </div>
+
+                      <div id="selectStepSix" style="display: none;">
+        <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepFive">Back</a>
+                      <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepSeven">Next</button>
+
+        </div>
+      </div>
+
+                      <div id="selectStepSeven" style="display: none;">
+        <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepSix">Back</a>
+                      <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepEight">Next</button>
+
+        </div>
+      </div>
+
+                      <div id="selectStepEight" style="display: none;">
+        <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepSeven">Back</a>
+                      <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepNine">Next</button>
+
+        </div>
+      </div>
+
+                              <div id="selectStepNine" style="display: none;">
+        <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepEight">Back</a>
+                      <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepTen">Next</button>
+
+        </div>
+      </div>
+
+                              <div id="selectStepTen" style="display: none;">
+        <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepNine">Back</a>
+                      <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepEleven">Next</button>
+
+        </div>
+      </div>
+                      <div id="selectStepEleven" style="display: none;">
+       <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepTen">Back</a>
+                      <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-next-step="#selectStepTwelve">Next</button>
+
+        </div>
+      </div>
+
+                              <div id="selectStepTwelve" style="display: none;">
+        <div id="basicsAccordion">
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseOne"
+                aria-expanded="true"
+                aria-controls="basicsCollapseOne">
+          Do you have any built-in caching?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseOne" class="collapse show"
+         aria-labelledby="basicsHeadingOne"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseTwo"
+                aria-expanded="false"
+                aria-controls="basicsCollapseTwo">
+          Can I add/upgrade my plan at any time?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseTwo" class="collapse"
+         aria-labelledby="basicsHeadingTwo"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingThree">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseThree"
+                aria-expanded="false"
+                aria-controls="basicsCollapseThree">
+          What access comes with my hosting plan?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseThree" class="collapse"
+         aria-labelledby="basicsHeadingThree"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+
+  <!-- Card -->
+  <div class="card mb-3">
+    <div class="card-header card-collapse" id="basicsHeadingFour">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed p-3"
+                data-toggle="collapse"
+                data-target="#basicsCollapseFour"
+                aria-expanded="false"
+                aria-controls="basicsCollapseFour">
+          How do I change my password?
+
+          <span class="card-btn-arrow">
+            <span class="fas fa-arrow-down small"></span>
+          </span>
+        </button>
+      </h5>
+    </div>
+    <div id="basicsCollapseFour" class="collapse"
+         aria-labelledby="basicsHeadingFour"
+         data-parent="#basicsAccordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>
+
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-previous-step="#selectStepEleven">Back</a>
+          <button type="button" class="btn btn-sm btn-primary transition-3d-hover">Done</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- End Content Step Form -->
+  </div>
+</form>
+<!-- End Step Form -->
+    </div>
+</div>
+
+</main>
+
+
+
+
+{% endblock %}
